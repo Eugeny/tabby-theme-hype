@@ -1,13 +1,15 @@
 {
   "name": "terminus-theme-hype",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hyper inspired theme for Terminus",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --progress --color",
     "watch": "webpack --progress --color --watch"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": "Eugene Pankov",
   "license": "MIT",
   "peerDependencies": {
@@ -15,15 +17,20 @@
     "terminus-core": "*"
   },
   "devDependencies": {
+    "@angular/common": "^4.1.3",
+    "@angular/core": "^4.1.3",
+    "@angular/forms": "^4.1.3",
     "@types/webpack-env": "1.13.0",
-    "node-sass": "^4.5.0",
-    "bootstrap": "4.0.0-alpha.6",
-    "sass-loader": "^6.0.3",
-    "css-loader": "0.26.1",
-    "typescript": "~2.1.0",
-    "to-string-loader": "^1.1.5",
     "awesome-typescript-loader": "3.1.2",
+    "bootstrap": "4.0.0-alpha.6",
+    "css-loader": "0.26.1",
+    "node-sass": "^4.5.0",
     "raw-loader": "0.5.1",
+    "rxjs": "^5.4.0",
+    "sass-loader": "^6.0.3",
+    "terminus-core": "0.0.2",
+    "to-string-loader": "^1.1.5",
+    "typescript": "~2.1.0",
     "webpack": "2.3.3"
   }
 }

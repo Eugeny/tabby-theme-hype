@@ -12,7 +12,7 @@ module.exports = {
     libraryTarget: 'umd',
   },
   resolve: {
-    modules: ['.', 'src', 'node_modules', '../app/node_modules'].map(x => path.join(__dirname, x)),
+    modules: ['.', 'src', 'node_modules'].map(x => path.join(__dirname, x)),
     extensions: ['.ts', '.js'],
   },
   module: {
@@ -22,10 +22,6 @@ module.exports = {
         loader: 'awesome-typescript-loader',
         options: {
           configFileName: path.resolve(__dirname, 'tsconfig.json'),
-          paths: {
-            "terminus-*": [path.resolve(__dirname, '../terminus-*')],
-            "*": [path.resolve(__dirname, '../app/node_modules/*')],
-          }
         }
       },
       { test: /\.scss$/, use: ['to-string-loader', 'css-loader', 'sass-loader'] },
