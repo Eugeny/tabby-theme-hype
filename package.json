@@ -1,12 +1,13 @@
 {
   "name": "terminus-theme-hype",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Hyper inspired theme for Terminus",
   "keywords": ["terminus-plugin"],
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --progress --color",
-    "watch": "webpack --progress --color --watch"
+    "watch": "webpack --progress --color --watch",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "dist"
@@ -21,7 +22,8 @@
     "@angular/common": "^4.1.3",
     "@angular/core": "^4.1.3",
     "@angular/forms": "^4.1.3",
-    "@types/webpack-env": "1.13.0",
+    "@types/electron": "^1.6.10",
+    "@types/webpack-env": "^1.13.0",
     "awesome-typescript-loader": "3.1.2",
     "bootstrap": "4.0.0-alpha.6",
     "css-loader": "0.26.1",
