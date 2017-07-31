@@ -80,12 +80,18 @@ ngb-tabset .tab-content {
     background: $blue;
 }
 
-title-bar {
-    background: $body-bg2;
+window-controls {
+    svg {
+        transition: 0.25s fill;
+        fill: #aaa;
+    }
 
-    button {
-        &:hover { background: $button-hover-bg !important; }
-        &:active { background: $button-active-bg !important; }
+    button:hover svg {
+        fill: white;
+    }
+
+    .btn-close:hover svg {
+        fill: red;
     }
 }
 
