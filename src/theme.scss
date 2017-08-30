@@ -61,6 +61,28 @@ $modal-footer-border-color:      $body-bg2;
 
 $popover-bg:                     $body-bg2;
 
+$dropdown-bg:                    $body-bg2;
+$dropdown-link-color:            $body-color;
+$dropdown-link-hover-color:      #333;
+$dropdown-link-hover-bg:         $body-bg3;
+//$dropdown-link-active-color:     $component-active-color;
+//$dropdown-link-active-bg:        $component-active-bg;
+$dropdown-link-disabled-color:   #333;
+$dropdown-header-color:          #333;
+
+$list-group-color: $body-color;
+$list-group-bg: rgba(255,255,255,.05);
+$list-group-border-color:  rgba(255,255,255,.1);
+$list-group-hover-bg: rgba(255,255,255,.1);
+$list-group-link-active-bg: rgba(255,255,255,.2);
+
+$pre-bg: $dropdown-bg;
+$pre-color: $dropdown-link-color;
+
+$alert-danger-bg: $body-bg2;
+$alert-danger-text: $red;
+$alert-danger-border: $red;
+
 
 @import '~bootstrap/scss/bootstrap.scss';
 
