@@ -1,6 +1,6 @@
 {
   "name": "terminus-theme-hype",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Hyper inspired theme for Terminus",
   "keywords": ["terminus-plugin"],
   "main": "dist/index.js",
