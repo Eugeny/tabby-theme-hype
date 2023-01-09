@@ -16,13 +16,11 @@ module.exports = {
     extensions: ['.ts', '.js'],
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.ts$/,
-        loader: 'awesome-typescript-loader',
-        options: {
-          configFileName: path.resolve(__dirname, 'tsconfig.json'),
-        }
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
       { test: /\.scss$/, use: ['to-string-loader', 'css-loader', 'sass-loader'] },
     ]
@@ -30,6 +28,7 @@ module.exports = {
   externals: [
     /^@angular/,
     /^@ng-bootstrap/,
-    /^terminus-/,
-  ]
+    /^tabby-/,
+  ],
+  mode: 'development'
 }

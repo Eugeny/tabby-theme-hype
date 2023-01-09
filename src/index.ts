@@ -1,5 +1,5 @@
 import { NgModule, Injectable } from '@angular/core'
-import { Theme } from 'terminus-core'
+import { Theme } from 'tabby-core'
 
 @Injectable()
 class HypeTheme extends Theme {
